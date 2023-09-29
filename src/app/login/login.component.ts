@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
   styleUrls: ['./login.component.css','../app.component.css'],
 })
 export class LoginComponent {
+  constructor(){}
+  ngOnInit(): void{}
 }
