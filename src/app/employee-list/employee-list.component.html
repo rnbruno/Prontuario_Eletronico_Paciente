@@ -1,1 +1,19 @@
 <p>employee-list works!</p>
+<table class="table tables-striped">
+    <thead>
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Id</th>
+        <th scope="col">email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let employee of employees">
+        <td>{{ employee.firstName}}</td>
+        <td>{{ employee.lastName}}</td>
+        <td>{{ employee.id}}</td>
+        <td>{{ employee.emailId}}</td>
+      </tr>
+    </tbody>
+  </table>
