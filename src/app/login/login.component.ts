@@ -9,5 +9,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   constructor( private router: Router) {}
-  ngOnInit(): void{}
+  ngOnInit(): void{
+  }
+  onButtonClick(): void {
+    this.router.navigate(['/create-acount']);
+    console.log('Botão clicado!');
+  }
 }
